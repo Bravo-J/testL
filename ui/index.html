@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">
+  <title>TEST WEB PAGE</title>
+
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="./styles/styleSheet.css">
+</head>
+
+<body>
+  <button type="button" class="button button1" id="yellow1" onclick="toggleYellow()">LED ON / OFF</button>
+  <button type="button "class="button Fox" id="green1" onclick="toggleGreen()">LED ON / OFF</button>
+  <button type="button" class="button two" id="red1" onclick="toggleRed()">LED ON / OFF</button>
+  <button type="button" class="button three" id="analog" onclick="Thermometer.toggle">Console Read</button>
+  <button type="button" class="button house" id="relay" onclick="fireRelay">RELAY BUTTON</button>
+  
+  <h3>Red:</h3>
+  <input id="red" type="number" min="0" max="255" step="10" value="0">
+  <p>Number between 0 and 255</p>
+  
+  <h3>Green:</h3>
+  <input id="green" type="number" min="0" max="255" step="10" value="0">
+  <p>Number between 0 and 255</p>
+  
+  <h3>Blue:</h3>
+  <input id="blue" type="number" min="0" max="255" step="10" value="0">
+  <p>Number between 0 and 255</p>
+  
+ 
+  
+  <!-- <div class="container">
+    <i class="fa fa-angle-up" id="forward"></i>
+    <i class="fa fa-angle-down" id="reverse"></i>
+    <i class="fa stop" id="stop"></i>
+  </div> -->
+
+  <script src="./javascript/uiSocketInteractions.js"></script>  
+  
+</body>
+</html>
