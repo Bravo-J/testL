@@ -35,8 +35,8 @@ var collectAnalogDataBoolean = true;
 	output: process.stdout
 	});*/
 
-//Arduino board connection
-var board = new five.Board();
+//Arduino board connection  seeing if this will update know.
+var board = new five.Board(); 
 
 //Part A
 //This is a test to make my own function?
